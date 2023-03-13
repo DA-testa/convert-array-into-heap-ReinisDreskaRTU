@@ -37,8 +37,8 @@ def main():
     elif "F" in input_type:
         file_name = input()
 
-        if "test/" not in file_name:
-            file_name = "test/" + file_name
+        if "tests/" not in file_name:
+            file_name = "tests/" + file_name
 
         with open(file_name, 'r') as file:
             n = int(file.readline())
