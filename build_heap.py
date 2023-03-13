@@ -37,6 +37,9 @@ def main():
     elif "F" in input_type:
         file_name = input()
 
+        if "test/" in file_name:
+            file_name.replace("test/", "tests/")
+
         if "tests/" not in file_name:
             file_name = "tests/" + file_name
 
